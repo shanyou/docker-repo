@@ -9,3 +9,8 @@ dnsmasq
 ```bash
 docker run -p 53:53/tcp -p 53:53/udp shanyou/dnsmasq
 ```
+
+添加自定义的解析
+```bash
+docker run -p 53:53/tcp -p 53:53/udp -v dnsmasq.hosts:/etc/dnsmasq.hosts shanyou/dnsmasq 
+```
